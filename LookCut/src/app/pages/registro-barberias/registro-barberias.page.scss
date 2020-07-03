@@ -1,0 +1,29 @@
+ion-header {
+  ion-toolbar {
+    color: #47525E;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+
+    ion-title {
+      font-size: 30px;
+    }
+  }
+}
+
+ion-content {
+  font-size: 25px;
+
+  ion-grid {
+    ion-row {
+      text-align: center;
+      color: #47525E;
+
+      ion-col {
+        ion-label {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
