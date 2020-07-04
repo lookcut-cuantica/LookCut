@@ -4,7 +4,7 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <h1>Registro Barberías</h1>
+        <h1>Registro Clientes</h1>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -20,16 +20,21 @@
     </ion-row>
     <ion-row>
       <ion-col size="10" offset="1">
-        <ion-item color="#009EE3">
-          <ion-label position="floating">Nit o CC</ion-label>
-          <ion-input type="text" color="#47525E" autocapitalize="on" mode="ios"></ion-input>
-        </ion-item>
+         <ion-item color="#009EE3">
+           <ion-label>Tipo documento</ion-label>
+           <ion-select placeholder="Seleccionar">
+             <ion-select-option value="CC">Cédula</ion-select-option>
+             <ion-select-option value="TI">Tarjeta identidad</ion-select-option>
+             <ion-select-option value="CE">Cédula extranjeria</ion-select-option>
+             <ion-select-option value="Otro">Otra</ion-select-option>
+           </ion-select>
+         </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="10" offset="1">
         <ion-item color="#009EE3">
-          <ion-label position="floating">Dirección</ion-label>
+          <ion-label position="floating">Número documento</ion-label>
           <ion-input type="text" color="#47525E" autocapitalize="on" mode="ios"></ion-input>
         </ion-item>
       </ion-col>
@@ -75,7 +80,7 @@
       </ion-col>
       <ion-col size="8">
         <ion-label class="no-background">
-          Barberías
+          Cliente
         </ion-label>
       </ion-col>
     </ion-row>

@@ -1,21 +1,18 @@
-ion-content {
-  ion-grid {
-    ion-row {
+ion-content{
+  ion-grid{
+    ion-row{
       text-align: center;
-
-      ion-col {
-        h1 {
+      ion-col{
+        h1{
           font-size: 30px;
           font-weight: bold;
           color: #009EE3;
         }
-
-        ion-item {
+        ion-item{
           background-color: #009EE3;
           border-radius: 1rem;
           color: #FFFFFF
         }
-
         ion-label {
           font-size: 20px;
           color: #FFFFFF;
@@ -23,16 +20,13 @@ ion-content {
           background-color: #009EE3;
           padding-bottom: 5%;
         }
-
         ion-input {
           font-size: 20px;
           color: #FFFFFF;
         }
-
-        ion-button {
+        ion-button{
           font-size: 25px;
         }
-
         ion-label.no-background {
           color: #47525E !important;
           background: #FFFFFF !important;

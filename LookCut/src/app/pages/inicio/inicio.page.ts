@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
   logo = [
     {
-      image: 'assets/imgs/logo.jpg',
+      image: 'assets/imgs/Logo_LookCut.jpeg',
       title: 'LookCut',
     },
   ];

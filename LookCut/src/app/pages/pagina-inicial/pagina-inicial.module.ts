@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PaginaInicialPageRoutingModule } from './pagina-inicial-routing.module';
 
 import { PaginaInicialPage } from './pagina-inicial.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PaginaInicialPageRoutingModule
+    PaginaInicialPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [PaginaInicialPage]
 })

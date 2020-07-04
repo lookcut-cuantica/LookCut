@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RegistroBarberiasPageRoutingModule } from './registro-barberias-routing.module';
 
 import { RegistroBarberiasPage } from './registro-barberias.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistroBarberiasPageRoutingModule
+    RegistroBarberiasPageRoutingModule, 
+    ComponentsModule
   ],
   declarations: [RegistroBarberiasPage]
 })
