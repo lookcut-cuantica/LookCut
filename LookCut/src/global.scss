@@ -26,5 +26,13 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 ion-content{
-  background-color: #01A6FF !important;
+  background-color: #000000 !important;
+}
+
+.hydrated {
+  background: #000000 !important;
+}
+
+.mayus{
+  text-transform: uppercase;
 }

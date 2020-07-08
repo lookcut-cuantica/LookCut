@@ -1,20 +1,37 @@
 
 ion-content {
-  font-size: 25px;
+   font-family: Agencyb;
+  .hydrated {
+    background: #000000 !important;
+  }
+  font-size: 30px;
   ion-grid {
     ion-row {
-      color: #47525E;
       ion-col {
         a{
-           color: #47525E;
+           color: #FFFFFF;
            text-decoration: none;
            text-align: left !important;
-           font-size: 22px;
+           font-size: 30px;
            font-weight: bold;
         }
+
       }
-      ion-button{
+      button{
         font-size: 30px;
+        border-radius: 30px;
+        width: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 8%;
+        background: #12110F;
+        border-top: 1px solid #ccc;
+        a{
+          text-decoration: none;
+        }
+        ion-img{
+          width: 100%;
+        }
       }
     }
   }
