@@ -1,13 +1,12 @@
 ion-footer {
-  background-color: #000000;
+  background-color: #000000 !important;
   font-family: Agencyb;
-  p {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-  }
-  p.mayus{
+  height: 5rem;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  span.mayus{
     text-transform: uppercase;
   }
 }

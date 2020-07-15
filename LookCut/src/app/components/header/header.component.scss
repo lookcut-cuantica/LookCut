@@ -1,5 +1,7 @@
 ion-header {
   text-align: center;
+  height: 5rem;
+  margin-bottom: 10%;
   ion-toolbar {
     color: #47525E;
     font-size: 25px;
@@ -17,7 +19,7 @@ ion-header {
     ion-title {
       text-align: center;
       ion-img {
-        width: 90%;
+        width: 60%;
       }
     }
   }
