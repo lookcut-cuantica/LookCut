@@ -79,7 +79,25 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  // blanco
+  --ion-color-blanco: #ffffff;
+  --ion-color-blanco-rgb: 255,255,255;
+  --ion-color-blanco-contrast: #000000;
+  --ion-color-blanco-contrast-rgb: 0,0,0;
+  --ion-color-blanco-shade: #e0e0e0;
+  --ion-color-blanco-tint: #ffffff;
 }
+
+ // blanco
+ .ion-color-blanco {
+   --ion-color-base: var(--ion-color-blanco) !important;
+   --ion-color-base-rgb: var(--ion-color-blanco-rgb) !important;
+   --ion-color-contrast: var(--ion-color-blanco-contrast) !important;
+   --ion-color-contrast-rgb: var(--ion-color-blanco-contrast-rgb) !important;
+   --ion-color-shade: var(--ion-color-blanco-shade) !important;
+   --ion-color-tint: var(--ion-color-blanco-tint) !important;
+ }
 
 @media (prefers-color-scheme: dark) {
   /*

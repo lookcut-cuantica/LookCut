@@ -1,7 +1,15 @@
 <ion-content [fullscreen]="true" color="dark" padding>
   <div id="container" *ngFor="let home of logo">
     <a href="/inicio-sesion">
-      <ion-img [src]="home.image"></ion-img>
+      <video autoplay muted loop>
+        <source src="assets/videos/logo_animado.mp4" type="video/mp4">
+        <source src="assets/videos/logo_animado.webm" type="video/webm">
+        <source src="assets/videos/logo_animado.avi" type="video/avi">
+        <source src="assets/videos/logo_animado.mpg" type="video/mpg">
+        <source src="assets/videos/logo_animado.mov" type="video/mov">
+        <ion-img [src]="home.image" alt="Video no soportado"></ion-img>
+        No se soporta contenido multimedia
+      </video>
     </a> 
   </div>
 </ion-content>

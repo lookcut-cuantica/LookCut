@@ -12,19 +12,30 @@
     <ion-row>
       <ion-col size="12">&nbsp;</ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col size="10" offset="1">
-        <input type="text" color="#FFFFFF" autofocus id="username" placeholder="Correo o Cédula" />
-      </ion-col>
-    </ion-row>
-   <ion-row>
-     <ion-col size="10" offset="1">
-       <input type="password" color="#FFFFFF" id="password" placeholder="Contraseña" />
-     </ion-col>
-   </ion-row>
-    <ion-row>
-      <ion-col size="12">&nbsp;</ion-col>
-    </ion-row>
+    <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <input type="text" color="blanco" autofocus id="username" name="correo" placeholder="Correo o Cédula" [(ngModel)]="usuario.correo" required />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <input type="password" color="blanco" id="password" name="password" placeholder="Contraseña" [(ngModel)]="usuario.password"
+            required />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">&nbsp;</ion-col>
+      </ion-row>
+      <ion-row text-center>
+        <ion-col size="8" offset="2">
+          <button type="submit" expand="block" color="#12110F" size="large" [disabled]="formulario.invalid">Iniciar Sesión</button>
+        </ion-col>
+      </ion-row>
+    </form>
+     <ion-row>
+       <ion-col size="12">&nbsp;</ion-col>
+     </ion-row>
     <ion-row>
       <ion-col size="8" offset="2">
         <ion-label class="no-background">
@@ -32,14 +43,6 @@
             ¿Olvidáste tu contraseña?
           </a>
         </ion-label>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12">&nbsp;</ion-col>
-    </ion-row>
-    <ion-row text-center>
-      <ion-col size="8" offset="2">
-        <button expand="block" color="#12110F" size="large">Iniciar Sesión</button>
       </ion-col>
     </ion-row>
   </ion-grid>

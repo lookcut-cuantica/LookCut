@@ -10,6 +10,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,14 +19,15 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    HttpClientModule,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Geolocation,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

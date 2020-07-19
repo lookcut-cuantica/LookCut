@@ -9,7 +9,7 @@ export class InicioPage implements OnInit {
   logo = [
     {
       image: 'assets/imgs/Logo_LookCut.jpeg',
-      title: 'LookCut',
+      title: 'LookCut'
     },
   ];
 

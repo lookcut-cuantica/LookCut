@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { Componente } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  Componentes: Componente[] = [];
+
+  constructor(private menuCtrl: MenuController) { }
 
   ngOnInit() {}
-
 }

@@ -28,15 +28,22 @@
 ion-content{
   background-color: #000000 !important;
   font-family: Agencyb;
-  max-height: 500px;
+}
+
+ion-menu{
+  font-family: Agencyb;
+}
+
+ion-header{
+  font-family: Agencyb;
 }
 
 ion-grid{
   background-color: #000000 !important;
 }
 
-.hydrated {
-  background: #000000 !important;
+ion-item{
+  background-color: #FFFFFF !important;
 }
 
 .mayus{

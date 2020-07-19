@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioSesionPage implements OnInit {
 
+  usuario = {
+    correo: '',
+    password: ''
+  };
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmitTemplate(){
+    console.log('Form submit');
   }
 
 }
