@@ -4,7 +4,12 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <h1>Registro</h1>
+        <h1>
+          <img src="/assets/imgs/aun_no_tienes_una_cuenta.png" alt="Aun no tienes una cuenta en LookCut"/>
+        </h1>
+        <h2>
+          <img src="/assets/imgs/registrate.png" alt="registrate"/>
+        </h2>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -13,27 +18,6 @@
     <ion-row>
       <ion-col size="10" offset="1">
         <input type="text" color="#FFFFFF" autofocus="true" id="nombres" placeholder="Nombres y Apellidos" />
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="10" offset="1">
-        <select name="tipoID" placeholder="Tipo de identificación">
-          <option value="">Tipo de identificación</option>
-          <option value="cc">Cédula de ciudadanía</option>
-          <option value="ce">Cédula extranjería</option>
-          <option value="nit">NIT</option>
-          <option value="otro">Otro</option>
-        </select>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="10" offset="1">
-        <input type="text" color="#FFFFFF" id="identificacdion" placeholder="Número de identificación" />
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="10" offset="1">
-        <input type="text" color="#FFFFFF" id="direccion" placeholder="Dirección" />
       </ion-col>
     </ion-row>
     <ion-row>
@@ -60,14 +44,43 @@
       <ion-col size="12">&nbsp;</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="2" offset="1">
-        <ion-checkbox checked="true" color="dark" name="checkbox-barberias"></ion-checkbox>
+      <ion-col size="12">
+        <ion-list color="dark">
+          <ion-radio-group value="tipo" color="dark">
+            <ion-item color="dark">
+              <ion-label>Barberías</ion-label>
+              <ion-radio slot="start" value="barberias"></ion-radio>
+            </ion-item>
+
+            <ion-item color="dark">
+              <ion-label>Salas de belleza</ion-label>
+              <ion-radio slot="start" value="salas-belleza"></ion-radio>
+            </ion-item>
+
+            <ion-item color="dark">
+              <ion-label>Clientes</ion-label>
+              <ion-radio slot="start" value="clientes"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
       </ion-col>
-      <ion-col size="8">
-        <label>
-          Salón de belleza
-        </label>
+      <!-- <ion-col size="4">
+        <ion-radio color="dark" mode="ios" value="barberias"></ion-radio>
+        &nbsp;
+        <label>Barberías</label>
       </ion-col>
+      <ion-col size="4">
+        <ion-radio color="dark" mode="ios" value="salas-belleza"></ion-radio>
+        &nbsp;
+        <label>Salas de belleza</label>
+      </ion-col> -->
+    <!-- </ion-row> -->
+    <!-- <ion-row> -->
+      <!-- <ion-col size="4">
+         <ion-radio color="dark" mode="ios" value="clientes"></ion-radio>
+         &nbsp;
+         <label>Clientes</label>
+      </ion-col> -->
     </ion-row>
     <ion-row>
       <ion-col size="12">&nbsp;</ion-col>
@@ -76,6 +89,9 @@
       <ion-col size="8" offset="2">
         <button expand="block" color="#12110F" size="large">Registrarme</button>
       </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">&nbsp;</ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
