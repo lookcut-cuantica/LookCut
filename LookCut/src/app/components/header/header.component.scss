@@ -1,11 +1,13 @@
 ion-header {
   text-align: center;
-  // height: 6rem;
+  background-color: #000000 !important;
+  padding: 2vw;
   ion-toolbar {
     color: #47525E;
     font-size: 25px;
     font-weight: 600;
     text-align: center;
+    background-color: #000000 !important;
     ion-col {
       h3 {
         text-align: left;

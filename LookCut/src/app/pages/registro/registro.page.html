@@ -15,29 +15,36 @@
     <ion-row>
       <ion-col size="12">&nbsp;</ion-col>
     </ion-row>
+    <form #formRegistro="ngForm" (ngSubmit)="onSubmitForm()">
     <ion-row>
       <ion-col size="10" offset="1">
-        <input type="text" color="#FFFFFF" autofocus="true" id="nombres" placeholder="Nombres y Apellidos" />
+        <input type="text" color="#FFFFFF" autofocus="true" id="nombres" placeholder="Nombres y Apellidos"
+          [(ngModel)]="registro.nombres" name="nombres" required />
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="10" offset="1">
-        <input type="text" color="#FFFFFF" id="telefono" placeholder="Teléfono" />
+        <input type="text" color="#FFFFFF" id="telefono" placeholder="Teléfono" [(ngModel)]="registro.telefono" name="telefono"
+          required />
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="10" offset="1">
-        <input type="email" color="#FFFFFF" id="correo" placeholder="Correo Electrónico" />
+        <input type="email" color="#FFFFFF" id="correo" placeholder="Correo Electrónico" [(ngModel)]="registro.correo" name="correo"
+          required />
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="10" offset="1">
-        <input type="password" color="#FFFFFF" autofocus="true" id="password" placeholder="Contraseña" />
+        <input type="password" color="#FFFFFF" autofocus="true" id="password" placeholder="Contraseña"
+          [(ngModel)]="registro.contrasenia" name="contrasenia" required />
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="10" offset="1">
-        <input type="text" color="#FFFFFF" autofocus="true" id="repetir-password" placeholder="Confirmar Contraseña" />
+        <input type="text" color="#FFFFFF" autofocus="true" id="repetir-password" placeholder="Confirmar Contraseña"
+          [(ngModel)]="registro.confirmContrasenia" name="confirmContrasenia"
+          required />
       </ion-col>
     </ion-row>
     <ion-row>
@@ -46,10 +53,10 @@
     <ion-row>
       <ion-col size="12">
         <ion-list color="dark">
-          <ion-radio-group value="tipo" color="dark">
+          <ion-radio-group value="tipo" color="dark" [(ngModel)]="registro.tipoCliente" name="tipoCliente">
             <ion-item color="dark">
               <ion-label>Barberías</ion-label>
-              <ion-radio slot="start" value="barberias"></ion-radio>
+              <ion-radio slot="start" value="barberias" ></ion-radio>
             </ion-item>
 
             <ion-item color="dark">
@@ -64,32 +71,16 @@
           </ion-radio-group>
         </ion-list>
       </ion-col>
-      <!-- <ion-col size="4">
-        <ion-radio color="dark" mode="ios" value="barberias"></ion-radio>
-        &nbsp;
-        <label>Barberías</label>
-      </ion-col>
-      <ion-col size="4">
-        <ion-radio color="dark" mode="ios" value="salas-belleza"></ion-radio>
-        &nbsp;
-        <label>Salas de belleza</label>
-      </ion-col> -->
-    <!-- </ion-row> -->
-    <!-- <ion-row> -->
-      <!-- <ion-col size="4">
-         <ion-radio color="dark" mode="ios" value="clientes"></ion-radio>
-         &nbsp;
-         <label>Clientes</label>
-      </ion-col> -->
     </ion-row>
     <ion-row>
       <ion-col size="12">&nbsp;</ion-col>
     </ion-row>
     <ion-row text-center>
       <ion-col size="8" offset="2">
-        <button expand="block" color="#12110F" size="large">Registrarme</button>
+        <button type="submit" expand="block" color="#12110F" size="large" [disabled]="formRegistro.invalid">Registrarme</button>
       </ion-col>
     </ion-row>
+    </form>
     <ion-row>
       <ion-col size="12">&nbsp;</ion-col>
     </ion-row>

@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroPage implements OnInit {
 
-  constructor() { }
+  registro = {
+    nombres: '',
+    telefono: '',
+    correo: '',
+    contrasenia: '',
+    confirmContrasenia: '',
+    tipoCliente: ''
+  };
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit() {}
+
+  onSubmitForm() {
+    console.log('Form submit');
   }
-
 }
