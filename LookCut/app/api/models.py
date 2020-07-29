@@ -41,7 +41,7 @@ class Hora(models.Model):
 class Cliente(models.Model):
     nombre = models.CharField(max_length=200)
     userName = models.CharField(max_length=200)
-    contraseña = models.CharField(max_length=200)
+    password = models.CharField(max_length=200)
     cedula = models.CharField(max_length=200)
 
     def __str__(self):
