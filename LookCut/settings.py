@@ -21,12 +21,12 @@ SECRET_KEY = '-hut&6ogg^qf1lf$-xkgevmslq_4e32*s-49_mo&g)0k2q)gj@'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [    
     'rest_framework',
     'LookCut.app.api',
     'drf_yasg',
@@ -121,3 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL =  '/media/'
