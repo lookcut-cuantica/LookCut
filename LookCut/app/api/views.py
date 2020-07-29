@@ -15,7 +15,12 @@ from .models import (
 )
 
 
-from .serializers import BarberiaSerializer, ServicioSerializer, BarberoSerializer
+from .serializers import (
+    BarberiaSerializer, 
+    ServicioSerializer, 
+    BarberoSerializer, 
+    ClienteSerializer
+)
 
 
 
@@ -43,9 +48,18 @@ class barberias(APIView):
 class servicios(APIView):
     parser_classes = (JSONParser,)
     @swagger_auto_schema(
-        responses={200:openapi.Response('Servicios',ServicioSerializer)}
+        responses={200:openapi.Response('Servicio',ServicioSerializer)}
     )
     def get(self, request):
         obj = Servicio.objects.all()
         serializer = ServicioSerializer(instance = obj, many=True)
+        return Response(serializer.data)
+
+
+
+class clientes(APIView):
+    
+    def get(self, request):
+        obj = Cliente.objects.all()
+        serializer = ClienteSerializer(instance = obj, many=True)
         return Response(serializer.data)

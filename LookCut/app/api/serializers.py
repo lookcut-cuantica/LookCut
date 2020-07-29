@@ -26,3 +26,8 @@ class BarberiaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Barberia
         fields = ('nombre', 'latitud', 'longitud', 'direccion', 'horario','servicios','barberos')
+
+class ClienteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Cliente
+        fields = ('id', 'nombre', 'userName', 'barberia')

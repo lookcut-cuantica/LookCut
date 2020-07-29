@@ -2,6 +2,7 @@ from django.db import models
 from datetime import date
 
 class Barbero(models.Model):
+    cedula = models.CharField(max_length=200)
     nombre = models.CharField(max_length=200)
     avatar = models.ImageField(upload_to="avatars")
     barberia = models.ForeignKey('Barberia', on_delete=models.CASCADE)
@@ -39,6 +40,10 @@ class Hora(models.Model):
 
 class Cliente(models.Model):
     nombre = models.CharField(max_length=200)
+    userName = models.CharField(max_length=200)
+    contraseña = models.CharField(max_length=200)
+    cedula = models.CharField(max_length=200)
+
     def __str__(self):
         return self.nombre
            
