@@ -30,4 +30,4 @@ class BarberiaSerializer(serializers.ModelSerializer):
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cliente
-        fields = ('id', 'nombre', 'userName', 'barberia')
+        fields = ('id', 'nombre', 'userName')
