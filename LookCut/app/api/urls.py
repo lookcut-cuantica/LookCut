@@ -9,6 +9,7 @@ urlpatterns = [
     path('barbero',views.barberos.as_view()),
     path('barberia',views.barberias.as_view()),
     path('clientes',views.clientes.as_view()),
+    path('registro',views.registro.as_view()),
 
 
 
